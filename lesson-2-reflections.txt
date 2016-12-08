@@ -17,13 +17,40 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+	Before you commit something, you can see how many files are in the staging 
+	area. So if there are too many in the staging area, remove some and only 
+	commit those pertaining to one logical change. 
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+	
+	Branches would be useful if you wanted two separate types of your file. 
+	For example in asteroids maybe you want one version that has continuous
+	bullets and one that has regular, or one that is fast and one that is slow.
+	Branches would help because you can maintain two separate versions and you
+	don't always have to go back and forth and checkout.
 
 How do the diagrams help you visualize the branch structure?
+
+	It helps me realize that certain commits are not accessible from other 
+	commits and that there can be multiple versions coexisting that
+	have different features. And also that once they branch, they could
+	be brought back together in the future with a merge.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+	Merging two branches takes the changes that were made independently in the
+	two branches and combines them into one version. It is helpful if two people
+	are working on separate features that eventually will both be in the final
+	version. We show it that way in the diagram because for a while they are
+	existing separately with separate histories and commits, but then they come
+	back together,
+
 What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
 manually?
+
+	Automatic merging is convenient because you do not have to do everything by
+	hand and remember the changes. However, it may sometimes merge in a way
+	that you were not intending. At least for most situations, it will 
+	bring it to your attention so you can make the call on how it should merge.
